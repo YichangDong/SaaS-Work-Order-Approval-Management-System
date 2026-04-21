@@ -1,5 +1,6 @@
 package com.saas.common.model;
 
+import com.baomidou.mybatisplus.annotation.TableId;
 import java.time.LocalDateTime;
 
 /**
@@ -7,6 +8,7 @@ import java.time.LocalDateTime;
  */
 public abstract class BaseEntity {
 
+    @TableId
     private Long id;
     private Long tenantId;
     private Long createdBy;
